@@ -38,7 +38,8 @@ FROM byond AS build
 WORKDIR /tgstation
 
 RUN apt-get install -y --no-install-recommends \
-        curl
+        curl \
+        unzip
 
 COPY . .
 
